@@ -1,0 +1,91 @@
+{
+  "_from": "bls-signatures",
+  "_id": "bls-signatures@1.0.14",
+  "_inBundle": false,
+  "_integrity": "sha512-QDPMfwetbfjwijtgmfrQ+VZc0hItMDopmhSfkDVDdlk10nHm1v0sQMc+CULKYbmaOT/8HZBOAHWlbWe89cqNYA==",
+  "_location": "/blssignatures",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "blssignatures",
+    "name": "blssignataaaures",
+    "escapedName": "blssignatures",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/blssignatures/-/blssignatures-1.0.14.tgz",
+  "_shasum": "cfd735d2241e244b187cf28c37b19181894c8732",
+  "_spec": "blssignatures",
+  "_where": "/root/test-bls",
+  "author": {
+    "name": "Anton Suprunchuk",
+    "email": "antouhou@gmail.com",
+    "url": "https://github.com/antouhou"
+  },
+  "bugs": {
+    "url": "https://github.com/John-Tonny/blssignatures/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "binascii": "0.0.2"
+  },
+  "deprecated": false,
+  "description": "The most advanced BLS library for JavaScript",
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^11.15.18",
+    "assert": "^2.0.0",
+    "babel-polyfill": "^6.26.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "karma": "^6.3.4",
+    "karma-firefox-launcher": "^1.3.0",
+    "karma-mocha": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^5.0.0",
+    "mime": "1.4.1",
+    "mocha": "^8.4.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "typescript": "^3.6.5",
+    "webpack": "^5.39.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "files": [
+    "blsjs.js",
+    "blsjs.wasm",
+    "blsjs.d.ts"
+  ],
+  "homepage": "https://github.com/John-Tonny/blssignatures",
+  "keywords": [
+    "bls",
+    "BLS",
+    "threshold",
+    "signature",
+    "crypto",
+    "cryptography"
+  ],
+  "main": "blsjs.js",
+  "name": "blssignatures",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/John-Tonny/blssignatures.git"
+  },
+  "scripts": {
+    "test": "npm run test:node && npm run test:browser",
+    "test:browser": "npm run test:typings && ./node_modules/.bin/karma start ./tests/karma.conf.js --single-run",
+    "test:node": "npm run test:typings && mocha ./tests/*.spec.js",
+    "test:typings": "tsc --esModuleInterop ./tests/typings.spec.ts"
+  },
+  "types": "blsjs.d.ts",
+  "version": "1.0.14"
+}
